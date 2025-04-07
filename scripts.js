@@ -16,7 +16,7 @@ function removeClass(element, name) {
 
 // Fetch a random word from the API
 function generateWords() {
-    return fetch('https://random-word-api.herokuapp.com/word')
+    return fetch('https://random-word-api.vercel.app/api')
         .then(response => response.json())
         .then(data => data[0]);
 }
